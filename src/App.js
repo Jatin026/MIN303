@@ -5,6 +5,9 @@ import data from "./data";
 
 import Dashboard from "./pages/Dashboard/Dashboard";
 import StockView from "./pages/StockView/StockView";
+import Register from "./pages/Register/Register";
+import Stocks from "./pages/Stocks/Stocks";
+
 
 function App() {
   const [exchanges, setExchanges] = useState([]);
@@ -46,6 +49,24 @@ function App() {
           path="/stocks/:ticker"
           render={(props) => <StockView {...props} stocks={stocks} />}
         />
+        <Route
+          path="/register"
+          render={(props) => (
+            <Register
+              {...props}
+            />
+          )}
+        />
+
+        <Route
+          path="/stocks"
+          render={(props) => (
+            <Stocks
+              {...props}
+            />
+          )}
+        />
+
       </Router>
     </div>
   );

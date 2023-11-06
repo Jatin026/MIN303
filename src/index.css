@@ -76,3 +76,13 @@ textarea {
   --dark-grey: #585858;
   --header-color: #1d1d1d;
 }
+#input-field {
+  background-color: rgba(134, 220, 42, 0);
+  border-radius: 5px;
+  width: 150px;
+  height: 40px;
+  padding: 5px;
+  flex: 1;
+  font-size: 20px;
+  margin-top: .5px;
+}
